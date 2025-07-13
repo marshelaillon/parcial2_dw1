@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KernelWire - Hardware y Electrónica</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#"><strong>KernelWire</strong></a>
+      <div class="navbar-nav me-auto">
+        <a class="nav-link" href="#">Hardware y Electrónica</a>
+        <a class="nav-link" href="#">Sistemas Operativos</a>
+      </div>
+      <div class="d-flex">
+        <input class="form-control me-2 search-input" type="search" placeholder="Buscar">
+        <button class="btn btn-outline-light" type="submit">Buscar</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-lg-2 sidebar">
+        <p class="h5">Menú de Navegación</>
+        <p>Hardware y Electrónica</p>
+        <hr>
+        <div class="sidebar-section">
+          <p class="section-label">Selecciona una opción:</p>
+          <ul class="nav flex-column ps-2">
+            <li class="nav-item">
+              <a class="nav-link sidebar-link active" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link sidebar-link" href="#">Arduino</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link sidebar-link" href="#">TinkerCAD</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link sidebar-link" href="#">Componentes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-9 col-lg-8 main-content">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card product-card">
+              <div class="card-img-container">
+                <img src="img/imagen1.jpeg" alt="Computer Setup" class="card-img-top">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card Modal</h5>
+                <p class="card-text">Este card tendrá un botón que al hacer click abrirá un modal con un título y un
+                  texto.</p>
+                <button class="btn btn-primary" onclick="openModal('img/imagen1.jpeg')">Abrir</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card product-card">
+              <div class="card-img-container">
+                <img src="img/imagen2.jpeg" alt="Technology" class="card-img-top">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <div class="d-flex flex-column mt-3">
+                  <span>Estrellas: <span class="fw-bold h1" data-card="0">1</span></span>
+                  <div class="mt-2 d-flex flex-wrap" style="gap: 0.25rem;">
+                    <button class="btn btn-sm btn-secondary rounded" onclick="updateStars(0, 'quitar')">Quitar</button>
+                    <button class="btn btn-sm btn-secondary rounded"
+                      onclick="updateStars(0, 'agregar')">Agregar</button>
+                    <button class="btn btn-sm btn-secondary rounded"
+                      onclick="updateStars(0, 'resetear')">Resetear</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card product-card">
+              <div class="card-img-container">
+                <img src="img/imagen3.jpeg" alt="Robotics" class="card-img-top">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <div class="d-flex flex-column mt-3">
+                  <span>Estrellas: <span class="fw-bold h1" data-card="1">0</span></span>
+                  <div class="mt-2 d-flex flex-wrap" style="gap: 0.25rem;">
+                    <button class="btn btn-sm btn-secondary rounded" onclick="updateStars(1, 'quitar')">Quitar</button>
+                    <button class="btn btn-sm btn-secondary rounded"
+                      onclick="updateStars(1, 'agregar')">Agregar</button>
+                    <button class="btn btn-sm btn-secondary rounded"
+                      onclick="updateStars(1, 'resetear')">Resetear</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="cardModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Título del Modal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Este es el contenido del modal que se abre cuando haces click en el botón "Abrir" del Card Modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

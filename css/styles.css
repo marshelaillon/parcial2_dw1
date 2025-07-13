@@ -1,0 +1,110 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Roboto, sans-serif;
+}
+
+.navbar {
+  background-color: #495057 !important;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 1.2rem;
+}
+
+.search-input {
+  background-color: #6c757d;
+  border: 1px solid #6c757d;
+  color: white;
+}
+
+.search-input::placeholder {
+  color: #adb5bd;
+}
+
+.sidebar {
+  background-color: #e9ecef;
+  min-height: calc(100vh - 56px);
+  padding: 40px 15px;
+  border-right: 2px solid #dee2e6;
+}
+
+.sidebar-link {
+  color: #007bff !important;
+  padding: 5px 0;
+  border: none;
+  background: none;
+}
+
+.sidebar-link:hover {
+  text-decoration: underline;
+}
+
+.sidebar-link.active {
+  font-weight: bold;
+}
+
+.main-content {
+  padding: 30px;
+}
+
+.product-card {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-img-container {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #495057;
+}
+
+.card-text {
+  color: #6c757d;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.star-count {
+  font-weight: bold;
+  color: #495057;
+}
+
+.modal-content {
+  border-radius: 8px;
+}
+
+.modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-title {
+  font-weight: 600;
+  color: #495057;
+}
